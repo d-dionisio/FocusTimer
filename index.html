@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta name="description" content="Contador estilo pomodoro">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusTimer</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script type="module" src="./src/main.js" defer></script>
+</head>
+
+<body>
+
+  <div id="app">
+
+    <section class="display">
+      <div id="contador" class="flex">
+        <span class="minutes">00</span>
+        <span>:</span>
+        <span class="seconds">00</span>
+      </div>
+
+      <div id="controls" class="flex">
+        <button data-action="toggleRunning" class="ph ph-play-circle"></button>
+        <button data-action="toggleRunningStop" class="ph ph-stop-circle"></button>
+        <button data-action="increase" class="ph ph-plus-circle"></button>
+        <button data-action="decrease" class="ph ph-minus-circle"></button>
+      </div>
+    </section>
+
+    <section class="elements">
+      <button class="ph ph-tree tree"></button>
+      <button class="ph ph-cloud-rain cloud"></button>
+      <button class="ph ph-storefront store"></button>
+      <button class="ph ph-fire fire"></button>
+    </section>
+
+  </div>
+
+</body>
+
+</html>
